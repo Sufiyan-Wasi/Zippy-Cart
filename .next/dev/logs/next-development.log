@@ -1,0 +1,538 @@
+[00:00:02.888] Server  LOG     ✓ Ready in 2.4s
+[00:00:02.953] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:00:05.978] Server  LOG     ○ Compiling /admin ...
+[00:00:14.260] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:14.620] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:14.620] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:14.620] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3001/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3001/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766338482481}
+[00:00:17.936] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3001/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3001/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766338485795}
+[00:00:22.621] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3001/admin color: rgb(120, 120, 120) color: inherit {"dp":"/admin","o":"http://localhost:3001/admin","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766338490463}
+[00:00:23.522] Server  WARN    ⚠ ./app/api/admin/orders/route.ts
+Module not found: Can't resolve '../lib/models/Order' in 'F:\Code_Journey\Web Dev Project\Zippy Cart\app\api\admin\orders'
+
+Import trace for requested module:
+./app/api/admin/orders/route.ts
+
+./app/api/admin/orders/route.ts
+Module not found: Can't resolve '../lib/orders' in 'F:\Code_Journey\Web Dev Project\Zippy Cart\app\api\admin\orders'
+
+Import trace for requested module:
+./app/api/admin/orders/route.ts
+[00:00:23.853] Server  ERROR   Error fetching orders: Error: Cannot find module '../lib/orders'
+[00:00:23.944] Server  ERROR   Error fetching orders: Error: Cannot find module '../lib/orders'
+[00:00:24.741] Server  WARN    ⚠ ./app/api/admin/orders/route.ts
+Module not found: Can't resolve '../lib/models/Order' in 'F:\Code_Journey\Web Dev Project\Zippy Cart\app\api\admin\orders'
+
+Import trace for requested module:
+./app/api/admin/orders/route.ts
+
+./app/api/admin/orders/route.ts
+Module not found: Can't resolve '../lib/orders' in 'F:\Code_Journey\Web Dev Project\Zippy Cart\app\api\admin\orders'
+
+Import trace for requested module:
+./app/api/admin/orders/route.ts
+[00:00:26.322] Server  LOG     ○ Compiling /admin/orders ...
+[00:00:26.365] Server  WARN    ⚠ ./app/api/admin/orders/route.ts
+Module not found: Can't resolve '../lib/models/Order' in 'F:\Code_Journey\Web Dev Project\Zippy Cart\app\api\admin\orders'
+
+Import trace for requested module:
+./app/api/admin/orders/route.ts
+
+./app/api/admin/orders/route.ts
+Module not found: Can't resolve '../lib/orders' in 'F:\Code_Journey\Web Dev Project\Zippy Cart\app\api\admin\orders'
+
+Import trace for requested module:
+./app/api/admin/orders/route.ts
+[00:00:28.429] Server  ERROR   Error fetching orders: Error: Cannot find module '../lib/orders'
+[00:00:28.432] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3001/admin/orders color: rgb(120, 120, 120) color: inherit {"dp":"/admin/orders","o":"http://localhost:3001/admin/orders","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766338496299}
+[00:00:28.515] Server  ERROR   Error fetching orders: Error: Cannot find module '../lib/orders'
+[00:00:29.989] Server  WARN    ⚠ ./app/api/admin/orders/route.ts
+Module not found: Can't resolve '../lib/models/Order' in 'F:\Code_Journey\Web Dev Project\Zippy Cart\app\api\admin\orders'
+
+Import trace for requested module:
+./app/api/admin/orders/route.ts
+
+./app/api/admin/orders/route.ts
+Module not found: Can't resolve '../lib/orders' in 'F:\Code_Journey\Web Dev Project\Zippy Cart\app\api\admin\orders'
+
+Import trace for requested module:
+./app/api/admin/orders/route.ts
+[00:00:31.007] Server  WARN    ⚠ ./app/api/admin/orders/route.ts
+Module not found: Can't resolve '../lib/models/Order' in 'F:\Code_Journey\Web Dev Project\Zippy Cart\app\api\admin\orders'
+
+Import trace for requested module:
+./app/api/admin/orders/route.ts
+
+./app/api/admin/orders/route.ts
+Module not found: Can't resolve '../lib/orders' in 'F:\Code_Journey\Web Dev Project\Zippy Cart\app\api\admin\orders'
+
+Import trace for requested module:
+./app/api/admin/orders/route.ts
+[00:00:32.166] Server  WARN    ⚠ ./app/api/admin/orders/route.ts
+Module not found: Can't resolve '../lib/models/Order' in 'F:\Code_Journey\Web Dev Project\Zippy Cart\app\api\admin\orders'
+
+Import trace for requested module:
+./app/api/admin/orders/route.ts
+
+./app/api/admin/orders/route.ts
+Module not found: Can't resolve '../lib/orders' in 'F:\Code_Journey\Web Dev Project\Zippy Cart\app\api\admin\orders'
+
+Import trace for requested module:
+./app/api/admin/orders/route.ts
+[00:00:32.241] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3001/admin/users color: rgb(120, 120, 120) color: inherit {"dp":"/admin/users","o":"http://localhost:3001/admin/users","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766338500125}
+[00:00:32.643] Server  WARN    ⚠ ./app/api/admin/orders/route.ts
+Module not found: Can't resolve '../lib/models/Order' in 'F:\Code_Journey\Web Dev Project\Zippy Cart\app\api\admin\orders'
+
+Import trace for requested module:
+./app/api/admin/orders/route.ts
+
+./app/api/admin/orders/route.ts
+Module not found: Can't resolve '../lib/orders' in 'F:\Code_Journey\Web Dev Project\Zippy Cart\app\api\admin\orders'
+
+Import trace for requested module:
+./app/api/admin/orders/route.ts
+[00:00:34.610] Server  WARN    ⚠ ./app/api/admin/orders/route.ts
+Module not found: Can't resolve '../lib/models/Order' in 'F:\Code_Journey\Web Dev Project\Zippy Cart\app\api\admin\orders'
+
+Import trace for requested module:
+./app/api/admin/orders/route.ts
+
+./app/api/admin/orders/route.ts
+Module not found: Can't resolve '../lib/orders' in 'F:\Code_Journey\Web Dev Project\Zippy Cart\app\api\admin\orders'
+
+Import trace for requested module:
+./app/api/admin/orders/route.ts
+[00:00:35.264] Server  WARN    ⚠ ./app/api/admin/orders/route.ts
+Module not found: Can't resolve '../lib/models/Order' in 'F:\Code_Journey\Web Dev Project\Zippy Cart\app\api\admin\orders'
+
+Import trace for requested module:
+./app/api/admin/orders/route.ts
+
+./app/api/admin/orders/route.ts
+Module not found: Can't resolve '../lib/orders' in 'F:\Code_Journey\Web Dev Project\Zippy Cart\app\api\admin\orders'
+
+Import trace for requested module:
+./app/api/admin/orders/route.ts
+[00:00:36.391] Server  WARN    ⚠ ./app/api/admin/orders/route.ts
+Module not found: Can't resolve '../lib/models/Order' in 'F:\Code_Journey\Web Dev Project\Zippy Cart\app\api\admin\orders'
+
+Import trace for requested module:
+./app/api/admin/orders/route.ts
+
+./app/api/admin/orders/route.ts
+Module not found: Can't resolve '../lib/orders' in 'F:\Code_Journey\Web Dev Project\Zippy Cart\app\api\admin\orders'
+
+Import trace for requested module:
+./app/api/admin/orders/route.ts
+[00:00:36.459] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3001/admin/revenue color: rgb(120, 120, 120) color: inherit {"dp":"/admin/revenue","o":"http://localhost:3001/admin/revenue","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766338504351}
+[00:00:36.891] Server  WARN    ⚠ ./app/api/admin/orders/route.ts
+Module not found: Can't resolve '../lib/models/Order' in 'F:\Code_Journey\Web Dev Project\Zippy Cart\app\api\admin\orders'
+
+Import trace for requested module:
+./app/api/admin/orders/route.ts
+
+./app/api/admin/orders/route.ts
+Module not found: Can't resolve '../lib/orders' in 'F:\Code_Journey\Web Dev Project\Zippy Cart\app\api\admin\orders'
+
+Import trace for requested module:
+./app/api/admin/orders/route.ts
+[00:00:38.338] Server  WARN    ⚠ ./app/api/admin/orders/route.ts
+Module not found: Can't resolve '../lib/models/Order' in 'F:\Code_Journey\Web Dev Project\Zippy Cart\app\api\admin\orders'
+
+Import trace for requested module:
+./app/api/admin/orders/route.ts
+
+./app/api/admin/orders/route.ts
+Module not found: Can't resolve '../lib/orders' in 'F:\Code_Journey\Web Dev Project\Zippy Cart\app\api\admin\orders'
+
+Import trace for requested module:
+./app/api/admin/orders/route.ts
+[00:00:39.486] Server  WARN    ⚠ ./app/api/admin/orders/route.ts
+Module not found: Can't resolve '../lib/models/Order' in 'F:\Code_Journey\Web Dev Project\Zippy Cart\app\api\admin\orders'
+
+Import trace for requested module:
+./app/api/admin/orders/route.ts
+
+./app/api/admin/orders/route.ts
+Module not found: Can't resolve '../lib/orders' in 'F:\Code_Journey\Web Dev Project\Zippy Cart\app\api\admin\orders'
+
+Import trace for requested module:
+./app/api/admin/orders/route.ts
+[00:00:41.812] Server  WARN    ⚠ ./app/api/admin/orders/route.ts
+Module not found: Can't resolve '../lib/models/Order' in 'F:\Code_Journey\Web Dev Project\Zippy Cart\app\api\admin\orders'
+
+Import trace for requested module:
+./app/api/admin/orders/route.ts
+
+./app/api/admin/orders/route.ts
+Module not found: Can't resolve '../lib/orders' in 'F:\Code_Journey\Web Dev Project\Zippy Cart\app\api\admin\orders'
+
+Import trace for requested module:
+./app/api/admin/orders/route.ts
+[00:00:41.987] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3001/admin/refunds color: rgb(120, 120, 120) color: inherit {"dp":"/admin/refunds","o":"http://localhost:3001/admin/refunds","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766338509790}
+[00:00:42.656] Server  WARN    ⚠ ./app/api/admin/orders/route.ts
+Module not found: Can't resolve '../lib/models/Order' in 'F:\Code_Journey\Web Dev Project\Zippy Cart\app\api\admin\orders'
+
+Import trace for requested module:
+./app/api/admin/orders/route.ts
+
+./app/api/admin/orders/route.ts
+Module not found: Can't resolve '../lib/orders' in 'F:\Code_Journey\Web Dev Project\Zippy Cart\app\api\admin\orders'
+
+Import trace for requested module:
+./app/api/admin/orders/route.ts
+[00:00:44.997] Server  WARN    ⚠ ./app/api/admin/orders/route.ts
+Module not found: Can't resolve '../lib/models/Order' in 'F:\Code_Journey\Web Dev Project\Zippy Cart\app\api\admin\orders'
+
+Import trace for requested module:
+./app/api/admin/orders/route.ts
+
+./app/api/admin/orders/route.ts
+Module not found: Can't resolve '../lib/orders' in 'F:\Code_Journey\Web Dev Project\Zippy Cart\app\api\admin\orders'
+
+Import trace for requested module:
+./app/api/admin/orders/route.ts
+[00:00:45.761] Browser ERROR   ./app/admin/products/page.tsx
+Error:   × Expected '</', got 'numeric literal (10, 10)'
+     ╭─[F:\Code_Journey\Web Dev Project\Zippy Cart\app\admin\products\page.tsx:116:1]
+ 113 │           </CardHeader>
+ 114 │           <CardContent>
+ 115 │             <div className="text-2xl font-bold text-orange-600">{lowStock}</div>
+ 116 │             <p className="text-xs text-muted-foreground">Products with stock <10</p>
+     ·                                                                               ──
+ 117 │           </CardContent>
+ 118 │         </Card>
+ 119 │         <Card>
+     ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/admin/products/page.tsx
+[00:00:45.895] Server  ERROR   ⨯ ./app/admin/products/page.tsx
+Error:   × Expected '</', got 'numeric literal (10, 10)'
+     ╭─[F:\Code_Journey\Web Dev Project\Zippy Cart\app\admin\products\page.tsx:116:1]
+ 113 │           </CardHeader>
+ 114 │           <CardContent>
+ 115 │             <div className="text-2xl font-bold text-orange-600">{lowStock}</div>
+ 116 │             <p className="text-xs text-muted-foreground">Products with stock <10</p>
+     ·                                                                               ──
+ 117 │           </CardContent>
+ 118 │         </Card>
+ 119 │         <Card>
+     ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/admin/products/page.tsx
+[00:00:46.912] Browser ERROR   ./app/admin/products/page.tsx
+Error:   × Expected '</', got 'numeric literal (10, 10)'
+     ╭─[F:\Code_Journey\Web Dev Project\Zippy Cart\app\admin\products\page.tsx:116:1]
+ 113 │           </CardHeader>
+ 114 │           <CardContent>
+ 115 │             <div className="text-2xl font-bold text-orange-600">{lowStock}</div>
+ 116 │             <p className="text-xs text-muted-foreground">Products with stock <10</p>
+     ·                                                                               ──
+ 117 │           </CardContent>
+ 118 │         </Card>
+ 119 │         <Card>
+     ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/admin/products/page.tsx
+[00:00:46.926] Server  ERROR   ⨯ ./app/admin/products/page.tsx
+Error:   × Expected '</', got 'numeric literal (10, 10)'
+     ╭─[F:\Code_Journey\Web Dev Project\Zippy Cart\app\admin\products\page.tsx:116:1]
+ 113 │           </CardHeader>
+ 114 │           <CardContent>
+ 115 │             <div className="text-2xl font-bold text-orange-600">{lowStock}</div>
+ 116 │             <p className="text-xs text-muted-foreground">Products with stock <10</p>
+     ·                                                                               ──
+ 117 │           </CardContent>
+ 118 │         </Card>
+ 119 │         <Card>
+     ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/admin/products/page.tsx
+[00:00:48.996] Browser ERROR   ./app/admin/products/page.tsx
+Error:   × Expected '</', got 'numeric literal (10, 10)'
+     ╭─[F:\Code_Journey\Web Dev Project\Zippy Cart\app\admin\products\page.tsx:116:1]
+ 113 │           </CardHeader>
+ 114 │           <CardContent>
+ 115 │             <div className="text-2xl font-bold text-orange-600">{lowStock}</div>
+ 116 │             <p className="text-xs text-muted-foreground">Products with stock <10</p>
+     ·                                                                               ──
+ 117 │           </CardContent>
+ 118 │         </Card>
+ 119 │         <Card>
+     ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/admin/products/page.tsx
+[00:00:49.012] Server  ERROR   ⨯ ./app/admin/products/page.tsx
+Error:   × Expected '</', got 'numeric literal (10, 10)'
+     ╭─[F:\Code_Journey\Web Dev Project\Zippy Cart\app\admin\products\page.tsx:116:1]
+ 113 │           </CardHeader>
+ 114 │           <CardContent>
+ 115 │             <div className="text-2xl font-bold text-orange-600">{lowStock}</div>
+ 116 │             <p className="text-xs text-muted-foreground">Products with stock <10</p>
+     ·                                                                               ──
+ 117 │           </CardContent>
+ 118 │         </Card>
+ 119 │         <Card>
+     ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/admin/products/page.tsx
+[00:00:50.525] Browser ERROR   uncaughtError: ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   × Expected '</', got 'numeric literal (10, 10)'
+     ╭─[F:\Code_Journey\Web Dev Project\Zippy Cart\app\admin\products\page.tsx:116:1]
+ 113 │           </CardHeader>
+ 114 │           <CardContent>
+ 115 │             <div className="text-2xl font-bold text-orange-600">{lowStock}</div>
+ 116 │             <p className="text-xs text-muted-foreground">Products with stock <10</p>
+     ·                                                                               ──
+ 117 │           </CardContent>
+ 118 │         </Card>
+ 119 │         <Card>
+     ╰────
+
+
+Caused by:
+    Syntax Error
+[00:00:50.630] Browser ERROR   ./app/admin/products/page.tsx
+Error:   × Expected '</', got 'numeric literal (10, 10)'
+     ╭─[F:\Code_Journey\Web Dev Project\Zippy Cart\app\admin\products\page.tsx:116:1]
+ 113 │           </CardHeader>
+ 114 │           <CardContent>
+ 115 │             <div className="text-2xl font-bold text-orange-600">{lowStock}</div>
+ 116 │             <p className="text-xs text-muted-foreground">Products with stock <10</p>
+     ·                                                                               ──
+ 117 │           </CardContent>
+ 118 │         </Card>
+ 119 │         <Card>
+     ╰────
+
+Caused by:
+    Syntax Error
+[00:04:01.359] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:04:03.498] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:04:08.742] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:04:10.531] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:11.621] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:04:11.621] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/admin/products","route":"/admin/products"}
+[00:04:11.621] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3001/admin/products color: rgb(120, 120, 120) color: inherit {"dp":"/admin/products","o":"http://localhost:3001/admin/products","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766338718762}
+[00:04:13.381] Server  WARN    ⚠ ./app/api/admin/products/route.ts
+Module not found: Can't resolve '../../lib/models/Product' in 'F:\Code_Journey\Web Dev Project\Zippy Cart\app\api\admin\products'
+
+Import trace for requested module:
+./app/api/admin/products/route.ts
+
+./app/api/admin/products/route.ts
+Module not found: Can't resolve '../../lib/products' in 'F:\Code_Journey\Web Dev Project\Zippy Cart\app\api\admin\products'
+
+Import trace for requested module:
+./app/api/admin/products/route.ts
+[00:04:14.867] Server  LOG     ○ Compiling /api/admin/products ...
+[00:04:14.976] Server  ERROR   Error fetching products: Error: Cannot find module '../../lib/products'
+[00:04:15.089] Server  ERROR   Error fetching products: Error: Cannot find module '../../lib/products'
+[00:04:23.630] Server  WARN    ⚠ ./app/api/admin/products/route.ts
+Module not found: Can't resolve '../../lib/models/Product' in 'F:\Code_Journey\Web Dev Project\Zippy Cart\app\api\admin\products'
+
+Import trace for requested module:
+./app/api/admin/products/route.ts
+
+./app/api/admin/products/route.ts
+Module not found: Can't resolve '../../lib/products' in 'F:\Code_Journey\Web Dev Project\Zippy Cart\app\api\admin\products'
+
+Import trace for requested module:
+./app/api/admin/products/route.ts
+[00:06:12.573] Browser ERROR   ./app/admin/products/page.tsx
+Error:   × Expected ',', got '{'
+    ╭─[F:\Code_Journey\Web Dev Project\Zippy Cart\app\admin\products\page.tsx:62:1]
+ 59 │   const stockData = [
+ 60 │     { name: "In Stock (≥10)", value: inStock },
+ 61 │     { name: "Low Stock (&lt;10)", value: lowStock }
+ 62 │     { name: "Out of Stock", value: outOfStock },
+    ·     ─
+ 63 │   ]
+ 64 │ 
+ 65 │   // Top categories by product count
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/admin/products/page.tsx
+[00:06:13.305] Server  ERROR   ⨯ ./app/admin/products/page.tsx
+Error:   × Expected ',', got '{'
+    ╭─[F:\Code_Journey\Web Dev Project\Zippy Cart\app\admin\products\page.tsx:62:1]
+ 59 │   const stockData = [
+ 60 │     { name: "In Stock (≥10)", value: inStock },
+ 61 │     { name: "Low Stock (&lt;10)", value: lowStock }
+ 62 │     { name: "Out of Stock", value: outOfStock },
+    ·     ─
+ 63 │   ]
+ 64 │ 
+ 65 │   // Top categories by product count
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/admin/products/page.tsx
+[00:06:13.324] Browser ERROR   ./app/admin/products/page.tsx
+Error:   × Expected ',', got '{'
+    ╭─[F:\Code_Journey\Web Dev Project\Zippy Cart\app\admin\products\page.tsx:62:1]
+ 59 │   const stockData = [
+ 60 │     { name: "In Stock (≥10)", value: inStock },
+ 61 │     { name: "Low Stock (&lt;10)", value: lowStock }
+ 62 │     { name: "Out of Stock", value: outOfStock },
+    ·     ─
+ 63 │   ]
+ 64 │ 
+ 65 │   // Top categories by product count
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/admin/products/page.tsx
+[00:06:13.962] Browser ERROR   uncaughtError: ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   × Expected ',', got '{'
+    ╭─[F:\Code_Journey\Web Dev Project\Zippy Cart\app\admin\products\page.tsx:62:1]
+ 59 │   const stockData = [
+ 60 │     { name: "In Stock (≥10)", value: inStock },
+ 61 │     { name: "Low Stock (&lt;10)", value: lowStock }
+ 62 │     { name: "Out of Stock", value: outOfStock },
+    ·     ─
+ 63 │   ]
+ 64 │ 
+ 65 │   // Top categories by product count
+    ╰────
+
+
+Caused by:
+    Syntax Error
+[00:06:14.320] Browser ERROR   ./app/admin/products/page.tsx
+Error:   × Expected ',', got '{'
+    ╭─[F:\Code_Journey\Web Dev Project\Zippy Cart\app\admin\products\page.tsx:62:1]
+ 59 │   const stockData = [
+ 60 │     { name: "In Stock (≥10)", value: inStock },
+ 61 │     { name: "Low Stock (&lt;10)", value: lowStock }
+ 62 │     { name: "Out of Stock", value: outOfStock },
+    ·     ─
+ 63 │   ]
+ 64 │ 
+ 65 │   // Top categories by product count
+    ╰────
+
+Caused by:
+    Syntax Error
+[00:06:43.034] Server  WARN    ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:06:43.746] Server  WARN    ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:06:44.088] Server  WARN    ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:06:44.088] Browser ERROR   ./app/admin/products/page.tsx
+Error:   × Expected ',', got '{'
+    ╭─[F:\Code_Journey\Web Dev Project\Zippy Cart\app\admin\products\page.tsx:62:1]
+ 59 │   const stockData = [
+ 60 │     { name: "In Stock (≥10)", value: inStock },
+ 61 │     { name: "Low Stock (&lt;10)", value: lowStock }
+ 62 │     { name: "Out of Stock", value: outOfStock },
+    ·     ─
+ 63 │   ]
+ 64 │ 
+ 65 │   // Top categories by product count
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/admin/products/page.tsx
+[00:06:44.723] Server  ERROR   ⨯ ./app/admin/products/page.tsx
+Error:   × Expected ',', got '{'
+    ╭─[F:\Code_Journey\Web Dev Project\Zippy Cart\app\admin\products\page.tsx:62:1]
+ 59 │   const stockData = [
+ 60 │     { name: "In Stock (≥10)", value: inStock },
+ 61 │     { name: "Low Stock (&lt;10)", value: lowStock }
+ 62 │     { name: "Out of Stock", value: outOfStock },
+    ·     ─
+ 63 │   ]
+ 64 │ 
+ 65 │   // Top categories by product count
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/admin/products/page.tsx
+[00:06:44.736] Browser ERROR   ./app/admin/products/page.tsx
+Error:   × Expected ',', got '{'
+    ╭─[F:\Code_Journey\Web Dev Project\Zippy Cart\app\admin\products\page.tsx:62:1]
+ 59 │   const stockData = [
+ 60 │     { name: "In Stock (≥10)", value: inStock },
+ 61 │     { name: "Low Stock (&lt;10)", value: lowStock }
+ 62 │     { name: "Out of Stock", value: outOfStock },
+    ·     ─
+ 63 │   ]
+ 64 │ 
+ 65 │   // Top categories by product count
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/admin/products/page.tsx
+[00:06:45.213] Browser ERROR   uncaughtError: ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   × Expected ',', got '{'
+    ╭─[F:\Code_Journey\Web Dev Project\Zippy Cart\app\admin\products\page.tsx:62:1]
+ 59 │   const stockData = [
+ 60 │     { name: "In Stock (≥10)", value: inStock },
+ 61 │     { name: "Low Stock (&lt;10)", value: lowStock }
+ 62 │     { name: "Out of Stock", value: outOfStock },
+    ·     ─
+ 63 │   ]
+ 64 │ 
+ 65 │   // Top categories by product count
+    ╰────
+
+
+Caused by:
+    Syntax Error
+[00:06:46.319] Browser ERROR   ./app/admin/products/page.tsx
+Error:   × Expected ',', got '{'
+    ╭─[F:\Code_Journey\Web Dev Project\Zippy Cart\app\admin\products\page.tsx:62:1]
+ 59 │   const stockData = [
+ 60 │     { name: "In Stock (≥10)", value: inStock },
+ 61 │     { name: "Low Stock (&lt;10)", value: lowStock }
+ 62 │     { name: "Out of Stock", value: outOfStock },
+    ·     ─
+ 63 │   ]
+ 64 │ 
+ 65 │   // Top categories by product count
+    ╰────
+
+Caused by:
+    Syntax Error

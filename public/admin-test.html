@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel Test</title>
+</head>
+<body>
+    <h1>Admin Panel Test</h1>
+    <button onclick="setAuthToken()">Set Auth Token</button>
+    <button onclick="testAdminAccess()">Test Admin Access</button>
+    <button onclick="redirectToAdmin()">Go to Admin Panel</button>
+    <div id="result"></div>
+
+    <script>
+        // The token we generated earlier
+        const authToken = 'eyJhbGciOiJIUzI1NiJ9.eyJpZCI6ImFkbWluLTEiLCJlbWFpbCI6InN1Zml5YW53MDI2QGdtYWlsLmNvbSIsIm5hbWUiOiJBZG1pbiIsInJvbGUiOiJhZG1pbiIsImV4cCI6MTc2NjkzOTE4NX0.VbhIDoLBbskTw85AQbSY-hxi006-Ybr76k2Y9yYh7rI';
+        
+        function setAuthToken() {
+            // Set the auth token as a cookie
+            document.cookie = `auth-token=${authToken}; path=/`;
+            document.getElementById('result').innerHTML = '<p style="color: green;">Auth token set in cookies!</p>';
+        }
+        
+        async function testAdminAccess() {
+            try {
+                const response = await fetch('/api/admin/stats', {
+                    method: 'GET',
+                    credentials: 'include',
+                    headers: {
+                        'Cookie': `auth-token=${authToken}`
+                    }
+                });
+                
+                const data = await response.json();
+                
+                if (response.ok) {
+                    document.getElementById('result').innerHTML = '<p style="color: green;">Admin access successful!</p><pre>' + JSON.stringify(data, null, 2) + '</pre>';
+                } else {
+                    document.getElementById('result').innerHTML = '<p style="color: red;">Admin access failed: ' + data.error + '</p>';
+                }
+            } catch (error) {
+                document.getElementById('result').innerHTML = '<p style="color: red;">Error: ' + error.message + '</p>';
+            }
+        }
+        
+        function redirectToAdmin() {
+            // Set the auth token first
+            setAuthToken();
+            // Redirect to admin panel
+            window.location.href = '/admin';
+        }
+    </script>
+</body>
+</html>
