@@ -5,11 +5,14 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev --webpack",
+    "dev:fast": "next dev --webpack --turbo",
+    "dev:optimized": "node scripts/optimize-build.js && next dev --webpack",
     "lint": "eslint .",
     "start": "next start",
     "fix:images": "node scripts/fix_product_images.js",
     "migrate:mongodb": "tsx scripts/migrate-to-mongodb.ts",
-    "update:images": "tsx scripts/update-product-images.ts"
+    "update:images": "tsx scripts/update-product-images.ts",
+    "optimize": "node scripts/optimize-build.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -72,6 +75,7 @@
     "zod": "3.25.76"
   },
   "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
     "@tailwindcss/postcss": "^4.1.9",
     "@types/node": "^22",
     "@types/react": "^19",

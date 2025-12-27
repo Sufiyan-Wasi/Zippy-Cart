@@ -2,6 +2,7 @@
 
 import { Star } from "lucide-react"
 import { cn } from "@/lib/utils"
+import { memo } from "react"
 
 interface StarsRatingProps {
   rating: number
@@ -12,7 +13,7 @@ interface StarsRatingProps {
   className?: string
 }
 
-export function StarsRating({
+export const StarsRating = memo(function StarsRating({
   rating,
   maxRating = 5,
   totalReviews,
@@ -58,5 +59,5 @@ export function StarsRating({
       )}
     </div>
   )
-}
+})
 

@@ -9,12 +9,13 @@ import type { Product } from "@/lib/types"
 import { formatINR } from "@/lib/utils"
 import { useCart } from "@/lib/cart-context"
 import { StarsRating } from "@/components/stars-rating"
+import { memo } from "react"
 
 interface ProductCardProps {
   product: Product
 }
 
-export function ProductCard({ product }: ProductCardProps) {
+export const ProductCard = memo(function ProductCard({ product }: ProductCardProps) {
   const { addToCart } = useCart()
   const isOutOfStock = product.stock === 0
   // Use deterministic ratings based on product ID to prevent hydration errors
@@ -93,4 +94,4 @@ export function ProductCard({ product }: ProductCardProps) {
       </div>
     </div>
   )
-}
+})

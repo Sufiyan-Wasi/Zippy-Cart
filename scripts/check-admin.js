@@ -1,4 +1,4 @@
-require('dotenv').config({ path: '.env.local' });
+require('dotenv').config({ path: require('path').resolve(__dirname, '../.env.local') });
 const { MongoClient } = require('mongodb');
 
 async function checkAdmin() {

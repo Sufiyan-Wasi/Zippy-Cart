@@ -6,7 +6,13 @@ import { EmbeddedCheckout, EmbeddedCheckoutProvider } from "@stripe/react-stripe
 import { startCheckoutSession, confirmPayment } from "@/app/actions/stripe"
 import type { ShippingAddress } from "@/lib/types"
 
-const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!)
+// Initialize Stripe promise only if the key exists
+const stripePromise = (function() {
+  if (typeof window !== 'undefined' && process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY) {
+    return loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY);
+  }
+  return Promise.resolve(null);
+})();
 
 interface StripeCheckoutProps {
   items: Array<{ productId: string; qty: number }>
@@ -51,15 +57,21 @@ export function StripeCheckout({ items, shippingAddress, onSuccess }: StripeChec
 
   return (
     <div id="checkout" className="min-h-[400px]">
-      <EmbeddedCheckoutProvider
-        stripe={stripePromise}
-        options={{
-          fetchClientSecret,
-          onComplete: handleComplete,
-        }}
-      >
-        <EmbeddedCheckout />
-      </EmbeddedCheckoutProvider>
+      {stripePromise ? (
+        <EmbeddedCheckoutProvider
+          stripe={stripePromise}
+          options={{
+            fetchClientSecret,
+            onComplete: handleComplete,
+          }}
+        >
+          <EmbeddedCheckout />
+        </EmbeddedCheckoutProvider>
+      ) : (
+        <div className="rounded-lg bg-destructive/10 p-4 text-center">
+          <p className="text-destructive">Stripe is not configured. Please set NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY in your environment variables.</p>
+        </div>
+      )}
     </div>
   )
 }

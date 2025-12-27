@@ -171,7 +171,7 @@ module.exports = require("next/dist/shared/lib/router/utils/app-paths");
 var __webpack_require__ = require("../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/jose","vendor-chunks/bcryptjs"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fadmin%2Forders%2Froute&page=%2Fapi%2Fadmin%2Forders%2Froute&appPaths=&pagePath=private-next-app-dir%2Fapi%2Fadmin%2Forders%2Froute.ts&appDir=F%3A%5CCode_Journey%5CWeb%20Dev%20Project%5CZippy%20Cart%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=F%3A%5CCode_Journey%5CWeb%20Dev%20Project%5CZippy%20Cart&isDev=true&tsconfigPath=&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!")));
+var __webpack_exports__ = __webpack_require__.X(0, ["vendors"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fadmin%2Forders%2Froute&page=%2Fapi%2Fadmin%2Forders%2Froute&appPaths=&pagePath=private-next-app-dir%2Fapi%2Fadmin%2Forders%2Froute.ts&appDir=F%3A%5CCode_Journey%5CWeb%20Dev%20Project%5CZippy%20Cart%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=F%3A%5CCode_Journey%5CWeb%20Dev%20Project%5CZippy%20Cart&isDev=true&tsconfigPath=&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!")));
 module.exports = __webpack_exports__;
 
 })();

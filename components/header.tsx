@@ -5,9 +5,8 @@ import type React from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useState, useEffect } from "react"
-import { ShoppingCart, User, Menu, X, Search, LogOut, Package, Settings, MapPin } from "lucide-react"
+import { ShoppingCart, User, Menu, X, LogOut, Package, Settings, MapPin } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -17,12 +16,16 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { useCart } from "@/lib/cart-context"
 import type { SessionUser } from "@/lib/types"
+import dynamic from "next/dynamic"
+
+const GoogleSearch = dynamic(() => import('./google-search').then(mod => mod.GoogleSearch), {
+  ssr: false,
+});
 
 export function Header() {
   const pathname = usePathname()
   const { totalItems, clearCart } = useCart()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [searchQuery, setSearchQuery] = useState("")
   const [user, setUser] = useState<SessionUser | null>(null)
 
   useEffect(() => {
@@ -32,13 +35,6 @@ export function Header() {
       .then((data) => setUser(data?.user || null))
       .catch(() => setUser(null))
   }, [pathname])
-
-  const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    if (searchQuery.trim()) {
-      window.location.href = `/products?search=${encodeURIComponent(searchQuery.trim())}`
-    }
-  }
 
   const handleLogout = async () => {
     try {
@@ -95,27 +91,10 @@ export function Header() {
             </div>
           </Link>
 
-          {/* Search Bar - Black and White */}
-          <form onSubmit={handleSearch} className="hidden md:flex flex-1 max-w-2xl mx-8">
-            <div className="relative w-full flex border-2 border-black">
-              <select className="hidden md:block rounded-l-none border-r-2 border-black bg-white px-3 py-2 text-sm text-black focus:outline-none">
-                <option>All</option>
-              </select>
-              <Input
-                type="search"
-                placeholder="Search Zippy Cart"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="flex-1 rounded-none border-0 border-black focus:border-black focus:ring-black"
-              />
-              <Button
-                type="submit"
-                className="rounded-l-none rounded-r-none bg-black hover:bg-gray-800 text-white border-0 px-6"
-              >
-                <Search className="h-5 w-5" />
-              </Button>
-            </div>
-          </form>
+          {/* Google Custom Search - Black and White */}
+          <div className="hidden md:flex flex-1 max-w-2xl mx-8">
+            <GoogleSearch />
+          </div>
 
           {/* Right Side Icons */}
           <div className="hidden md:flex items-center gap-2">
@@ -194,20 +173,9 @@ export function Header() {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden border-t-2 border-black py-4 bg-white">
-            <form onSubmit={handleSearch} className="mb-4 px-2">
-              <div className="relative flex border-2 border-black">
-                <Input
-                  type="search"
-                  placeholder="Search products..."
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  className="flex-1 rounded-r-none border-0"
-                />
-                <Button type="submit" className="rounded-l-none bg-black hover:bg-gray-800 text-white">
-                  <Search className="h-4 w-4" />
-                </Button>
-              </div>
-            </form>
+            <div className="mb-4 px-2">
+              <GoogleSearch />
+            </div>
             <nav className="flex flex-col gap-2 px-2">
               <Link href="/products" onClick={() => setIsMenuOpen(false)}>
                 <Button variant="ghost" className="w-full justify-start text-black hover:bg-gray-100">

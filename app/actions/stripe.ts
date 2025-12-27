@@ -90,6 +90,8 @@ export async function startCheckoutSession(items: CartItemInput[], shippingAddre
     redirect_on_completion: "never",
     line_items: lineItems,
     mode: "payment",
+    return_url: `${process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"}/checkout`,
+    payment_method_types: ["card"], // Specify payment methods
     metadata: {
       orderId: order.id,
       userId: session.id,

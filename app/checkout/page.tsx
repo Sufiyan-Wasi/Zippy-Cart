@@ -15,7 +15,7 @@ import { Separator } from "@/components/ui/separator"
 import { useCart } from "@/lib/cart-context"
 import { formatINR } from "@/lib/utils"
 import type { SessionUser, ShippingAddress } from "@/lib/types"
-import { StripeCheckout } from "@/components/stripe-checkout"
+import { StripeRedirectCheckout } from "@/components/stripe-redirect-checkout"
 
 type CheckoutStep = "shipping" | "payment" | "success"
 
@@ -262,7 +262,7 @@ export default function CheckoutPage() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <StripeCheckout
+                <StripeRedirectCheckout
                   items={items.map((item) => ({ productId: item.product.id, qty: item.qty }))}
                   shippingAddress={shippingAddress}
                   onSuccess={handlePaymentSuccess}

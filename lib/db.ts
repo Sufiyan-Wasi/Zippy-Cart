@@ -44,7 +44,7 @@ export default function getMongoClient(): Promise<MongoClient> {
 
 export async function getDb(): Promise<Db> {
   const client = await getClientPromise()
-  const dbName = process.env.MONGODB_DB_NAME || "ZippyCart"
+  const dbName = process.env.MONGODB_DB_NAME || "Zippy_Cart_DB"
   return client.db(dbName)
 }
 

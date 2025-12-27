@@ -58,7 +58,7 @@ export default function ProductsPage() {
 
   const stockData = [
     { name: "In Stock (≥10)", value: inStock },
-    { name: "Low Stock (&lt;10)", value: lowStock }
+    { name: "Low Stock (&lt;10)", value: lowStock },
     { name: "Out of Stock", value: outOfStock },
   ]
 

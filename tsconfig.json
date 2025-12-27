@@ -26,7 +26,11 @@
       "@/*": [
         "./*"
       ]
-    }
+    },
+    // Performance optimizations
+    "assumeChangesOnlyAffectDirectDependencies": true,
+    "disableSizeLimit": true,
+    "preserveWatchOutput": true
   },
   "include": [
     "next-env.d.ts",
@@ -36,6 +40,8 @@
     ".next/dev/types/**/*.ts"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "**/*.test.ts",
+    "**/*.spec.ts"
   ]
 }

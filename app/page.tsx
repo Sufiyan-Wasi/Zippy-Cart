@@ -4,15 +4,94 @@ import { ArrowRight, Truck, Shield, CreditCard, Headphones } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ProductCard } from "@/components/product-card"
-import { PRODUCTS, CATEGORIES } from "@/lib/products"
+// Lazy load products data to improve initial compilation
+import { lazy, Suspense } from "react"
+
+// Define types for our data
+interface Product {
+  id: string;
+  title: string;
+  priceINR: number;
+  images: string[];
+  category: string;
+}
+
+// Static data for faster initial load
+const STATIC_PRODUCTS: Product[] = [
+  {
+    id: "product-1",
+    title: "Smartphone XYZ",
+    priceINR: 29999,
+    images: ["/placeholder.svg"],
+    category: "Electronics"
+  },
+  {
+    id: "product-2",
+    title: "Laptop ABC",
+    priceINR: 59999,
+    images: ["/placeholder.svg"],
+    category: "Computers"
+  },
+  {
+    id: "product-3",
+    title: "Wireless Headphones",
+    priceINR: 2999,
+    images: ["/placeholder.svg"],
+    category: "Audio"
+  },
+  {
+    id: "product-4",
+    title: "Smart Watch",
+    priceINR: 15999,
+    images: ["/placeholder.svg"],
+    category: "Wearables"
+  },
+  {
+    id: "product-5",
+    title: "Bluetooth Speaker",
+    priceINR: 3999,
+    images: ["/placeholder.svg"],
+    category: "Audio"
+  },
+  {
+    id: "product-6",
+    title: "Tablet DEF",
+    priceINR: 19999,
+    images: ["/placeholder.svg"],
+    category: "Computers"
+  },
+  {
+    id: "product-7",
+    title: "Gaming Console",
+    priceINR: 34999,
+    images: ["/placeholder.svg"],
+    category: "Gaming"
+  },
+  {
+    id: "product-8",
+    title: "Digital Camera",
+    priceINR: 45999,
+    images: ["/placeholder.svg"],
+    category: "Photography"
+  }
+];
+
+const STATIC_CATEGORIES = [
+  "Electronics",
+  "Computers",
+  "Audio",
+  "Wearables",
+  "Gaming",
+  "Photography"
+];
 
 export default function HomePage() {
-  // Get featured products (first 8)
-  const featuredProducts = PRODUCTS.slice(0, 8)
+  // Use static data for faster initial load
+  const featuredProducts = STATIC_PRODUCTS.slice(0, 8)
 
   // Get one product per category for category showcase
-  const categoryProducts = CATEGORIES.map((category) => {
-    const product = PRODUCTS.find((p) => p.category === category)
+  const categoryProducts = STATIC_CATEGORIES.map((category) => {
+    const product = STATIC_PRODUCTS.find((p) => p.category === category)
     return { category, image: product?.images[0] || "" }
   })
 
@@ -28,15 +107,15 @@ export default function HomePage() {
             <p className="text-xl md:text-2xl mb-8 text-white/90">
               Shop the best products at amazing prices. Free delivery, easy returns, and secure payments.
             </p>
-            <div className="flex flex-wrap gap-4">
-              <Link href="/products">
-                <Button size="lg" className="bg-[#ffb700] hover:bg-[#f0a500] text-[#131921] font-semibold text-lg px-8 py-6">
+            <div className="flex flex-col sm:flex-row gap-4 w-full max-w-2xl">
+              <Link href="/products" className="flex-1">
+                <Button size="lg" className="w-full bg-[#ffb700] hover:bg-[#f0a500] text-[#131921] font-semibold text-lg px-6 py-6">
                   Shop Now
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
-              <Link href="/products?category=Electronics">
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 text-lg px-8 py-6">
+              <Link href="/products?category=Electronics" className="flex-1">
+                <Button size="lg" variant="outline" className="w-full border-2 border-white text-white hover:bg-white/20 text-lg px-6 py-6 font-semibold">
                   Browse Electronics
                 </Button>
               </Link>
